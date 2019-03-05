@@ -1,0 +1,12 @@
+<section id="projects" class="home-section site-content index list container">
+  <h2 class="home-section__title"><span style="opacity: .2;">Vietnamese</span> Articles</h2>
+  <div>
+    {{ range $.Site.Data.home.articles }}
+    <article class="article article--links">
+      <header>
+        <h1 class="article__title"><a href="{{ .link }}" target="_blank">{{ .title }}</a></h1>
+      </header>
+    </article>
+    {{ end }}
+  </div>
+</section>

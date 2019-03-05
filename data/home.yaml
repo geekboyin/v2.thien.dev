@@ -1,0 +1,31 @@
+socials:
+  - title: GitHub
+    link: https://github.com/tatthien
+    icon: https://tatthien.com/assets/img/github.svg
+  - title: LinkedIn
+    link: https://linkedin.com/in/tatthien/
+    icon: https://tatthien.com/assets/img/linkedin-in.svg
+  - title: Twitter
+    link: https://twitter.com/tat_thien
+    icon: https://tatthien.com/assets/img/twitter.svg
+  - title: Meetup
+    link: https://www.meetup.com/Saigon-WordPress/
+    icon: https://tatthien.com/assets/img/meetup.svg
+
+articles:
+  - title: Lấy dữ liệu web với Node.js và Puppeteer
+    link: https://12bit.vn/articles/lay-du-lieu-web-voi-nodejs-va-puppeteer
+
+projects:
+  - title: flat-preloader
+    desc: Create the loading page for WordPress site with many excited gif icons.
+    link: https://github.com/tatthien/flat-preloader
+    icon: 💈
+  - title: election-app
+    desc: Election app for youth at my church.
+    link: https://github.com/tatthien/election-app
+    icon: 🔺
+  - title: matkhau-cli
+    desc: Strong password generator in CLI.
+    link: https://github.com/tatthien/matkhau-cli
+    icon: 🔑

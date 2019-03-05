@@ -1,0 +1,23 @@
+<footer id="colophon" class="site-footer container">
+  <p>Craft with <span class="heart">❤</span> from 2018</p>
+  <p>Hosted on <a href="https://netlify.com" target="_blank">Netlify</a>. Fork me on <a href="https://github.com/tatthien/personal-website" target="_blank">Github</a></p>
+</footer><!-- #colophon -->
+</div>
+<!-- #wrap -->
+{{ template "_internal/google_analytics_async.html" . }}
+{{ $app := resources.Get "js/app.js"}}
+{{ if .IsPage }}
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+  {{ $highlightJs := resources.Get "js/highlight.pack.js"}}
+  {{ $commentJs := resources.Get "js/comment.js" }}
+  {{ $md5 := resources.Get "lib/md5.js" }}
+  {{ $js := slice $app $highlightJs $md5 $commentJs | resources.Concat "js/bundle.js" | resources.Minify | resources.Fingerprint}}
+  <script src="{{ $js.RelPermalink }}" defer onload="hljs.initHighlightingOnLoad();"></script>
+{{ else }}
+  {{ $js := $app | resources.Minify | resources.Fingerprint}}
+  <script src="{{ $js.RelPermalink }}" defer></script>
+{{ end }}
+<!-- Include quicklink from dist -->
+<script src="https://unpkg.com/quicklink" async onload="quicklink({origins:['thien.dev']})"></script>
+</body>
+</html>

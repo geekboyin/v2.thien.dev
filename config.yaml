@@ -1,0 +1,32 @@
+baseURL: 'https://thien.dev/'
+languageCode: vi-vn
+copyright: This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+title: thien.dev
+theme: blog
+enableGitInfo: true
+enableEmoji: true
+enableRobotsTXT: true
+googleAnalytics: UA-131517577-1
+uglyURLs: true
+paginate: 40
+outputs:
+  home:
+  - HTML
+  - RSS
+params:
+  description: write and share to learn
+  favicon: img/icon/favicon.png
+  images:
+    - img/index.png
+  facebookAppId: 363747664413304
+blackfriday:
+  hrefTargetBlank: true
+  noreferrerLinks: true
+menu:
+  main:
+  - identifier: resume
+    title: Resume
+    url: /pages/about.html
+  - identifier: chat
+    title: Contact
+    url: https://discord.gg/uMJxpXB

@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700&subset=vietnamese');
+$font-body: 'Inconsolata', monospace;
+$font-title: 'Inconsolata', monospace;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+$content-width: 700px;
+
+$color-bg: #1B1F23;
+$color-primary: #2188ff;
+$color-secondary: '';
+$color-dark: #2c2c2c;
+$color-gray: #ccc;
+$color-light: #e4e4e4;
+
+$color-success: #56BD77;
+
+%color-warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+%color-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+%color-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+%color-info {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+}
