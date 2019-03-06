@@ -1,16 +1,29 @@
 .section-intro {
-  width: 850px;
+  max-width: 850px;
   margin: 0 auto 4em;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-column-gap: 20px;
+  display: block;
   padding-left: 15px;
   padding-right: 15px;
   @include breakpoint(tablet) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 20px;
     padding-left: 25px;
     padding-right: 25px;
   }
+  &__figure {
+    display: none;
+    @include breakpoint(tablet) {
+      display: block
+    }
+  }
+  &__content-title {
+    color: $color-primary;
+  }
   &__content-desc {
-    margin-bottom: 1em;
+    margin-bottom: 1.5rem;
+  }
+  &__content-cta .button {
+    display: inline-block;
   }
 }

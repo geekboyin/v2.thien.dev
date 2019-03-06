@@ -1,16 +1,16 @@
 socials:
   - title: GitHub
     link: https://github.com/tatthien
-    icon: https://tatthien.com/assets/img/github.svg
+    icon: img/icon/github.svg
   - title: LinkedIn
     link: https://linkedin.com/in/tatthien/
-    icon: https://tatthien.com/assets/img/linkedin-in.svg
+    icon: img/icon/linkedin.svg
   - title: Twitter
     link: https://twitter.com/tat_thien
-    icon: https://tatthien.com/assets/img/twitter.svg
+    icon: img/icon/twitter.svg
   - title: Meetup
     link: https://www.meetup.com/Saigon-WordPress/
-    icon: https://tatthien.com/assets/img/meetup.svg
+    icon: img/icon/meetup.svg
 
 articles:
   - title: Lấy dữ liệu web với Node.js và Puppeteer

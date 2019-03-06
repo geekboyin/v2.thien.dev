@@ -2,7 +2,7 @@
   <h2 class="home-section__title">Connect</h2>
   <div class="social-list">
     {{ range $.Site.Data.home.socials }}
-    <a href="{{ .link }}" class="social-list__item">
+    <a href="{{ .link }}" class="social-list__item" target="_blank">
       <img src="{{ .icon }}" alt="{{ .title }}">
       <span>{{ .title }}</span>
     </a>
