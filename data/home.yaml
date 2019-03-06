@@ -24,7 +24,7 @@ projects:
   - title: election-app
     desc: Election app for youth at my church.
     link: https://github.com/tatthien/election-app
-    icon: 🔺
+    icon: ⛪
   - title: matkhau-cli
     desc: Strong password generator in CLI.
     link: https://github.com/tatthien/matkhau-cli
