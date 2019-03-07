@@ -15,6 +15,10 @@ socials:
 articles:
   - title: Lấy dữ liệu web với Node.js và Puppeteer
     link: https://12bit.vn/articles/lay-du-lieu-web-voi-nodejs-va-puppeteer
+  - title: Tạo HTTPS cho localhost sử dụng mkcert
+    link: https://12bit.vn/articles/tao-https-cho-localhost-su-dung-mkcert/
+  - title: Ứng dụng CSS variables để xây dựng tính năng dark theme
+    link: https://12bit.vn/articles/ung-dung-css-variables-de-xay-dung-dark-theme/
 
 projects:
   - title: flat-preloader
