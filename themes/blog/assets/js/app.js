@@ -1,37 +1,56 @@
-/* Table of content */
-let toc = document.querySelector('.toc')
-if (toc) {
-  let articleContent = document.querySelector('.article__content')
-  let articleContentTop = articleContent.offsetTop
-  toc.style.top = articleContentTop + 'px'
+let logoEl = document.querySelector('#logo')
+let textEl = document.querySelector('#logo .text')
+let cursorEl = document.querySelector('#logo .cursor')
+let animate = {
+  frames: [
+    'h',
+    'hi',
+    'hi!',
+    'hi!',
+    'hi!',
+    'hi!',
+    'hi!',
+    'hi!',
+    'hi!',
+    'hi',
+    'h',
+    '',
+    'i',
+    'it',
+    'it\'s',
+    'it\'s t',
+    'it\'s th',
+    'it\'s thi',
+    'it\'s thie',
+    'it\'s thien'
+  ],
+  interval: null,
+  running: false,
+  init () {
+    if (this.running) return
+    this.running = true
+    textEl.textContent = ''
+    setTimeout(() => {
+      // Stop blinking when typing
+      cursorEl.classList.remove('blinking')
 
-  window.addEventListener('scroll', function () {
-    let scrolled = window.pageXOffset || document.documentElement.scrollTop
-    if (scrolled > 150) {
-      toc.classList.add('sticky')
-      toc.style.top = 70 + 'px'
-    } else {
-      toc.classList.remove('sticky')
-      toc.style.top = articleContentTop + 'px'
-    }
-  })
-  let tocLinks = document.querySelectorAll('#TableOfContents a')
-  let callback = function (entries, observer) {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        let elem = entry.target
-        let tocLink = document.querySelector('a[href="#' + elem.id + '"]')
-        tocLinks.forEach(a => {
-          a.classList.remove('active')
-        })
-        tocLink.classList.add('active')
-      }
-    })
+      let i = 0;
+      this.interval = setInterval(() => {
+        textEl.textContent = this.frames[i];
+        if (i === this.frames.length - 1) {
+          clearInterval(this.interval)
+          cursorEl.classList.add('blinking')
+          this.running = false
+        } else {
+          i++
+        }
+      }, 130)
+    }, 1000)
   }
-
-  let observer = new IntersectionObserver(callback)
-  let targets = document.querySelectorAll('.article__content h2, .article__content h3')
-  targets.forEach(target => {
-    observer.observe(target);
-  })
 }
+
+animate.init()
+
+logoEl.addEventListener('mouseover', () => {
+  animate.init()
+})

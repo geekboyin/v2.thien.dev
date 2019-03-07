@@ -1,13 +1,13 @@
 .section-intro {
-  max-width: 850px;
+  max-width: $content-width;
   margin: 0 auto 4em;
   display: block;
   padding-left: 15px;
   padding-right: 15px;
   @include breakpoint(tablet) {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-column-gap: 20px;
+    // display: grid;
+    // grid-template-columns: 50% 50%;
+    // grid-column-gap: 20px;
     padding-left: 25px;
     padding-right: 25px;
   }
