@@ -6,7 +6,7 @@ theme: blog
 enableGitInfo: true
 enableEmoji: true
 enableRobotsTXT: true
-googleAnalytics: UA-131517577-1
+googleAnalytics: UA-135910674-1
 uglyURLs: true
 paginate: 40
 outputs:
