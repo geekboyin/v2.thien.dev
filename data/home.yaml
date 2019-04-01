@@ -13,6 +13,8 @@ socials:
     icon: img/icon/meetup.svg
 
 articles:
+  - title: Chụp hình web với Node.js và Puppeteer
+    link: https://12bit.vn/articles/chup-hinh-trang-web-voi-nodejs-va-puppeteer/
   - title: Lấy dữ liệu web với Node.js và Puppeteer
     link: https://12bit.vn/articles/lay-du-lieu-web-voi-nodejs-va-puppeteer
   - title: Tạo HTTPS cho localhost sử dụng mkcert
