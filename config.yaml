@@ -1,7 +1,7 @@
 baseURL: 'https://thien.dev/'
 languageCode: vi-vn
 copyright: This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
-title: thien dot dev
+title: Thien Nguyen
 theme: blog
 enableGitInfo: true
 enableEmoji: true
@@ -24,9 +24,6 @@ blackfriday:
   noreferrerLinks: true
 menu:
   main:
-  - identifier: resume
-    title: Resume
-    url: /storage/resume.pdf
   - identifier: contact
     title: Contact
     url: /pages/contact.html

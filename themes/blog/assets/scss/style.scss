@@ -90,8 +90,10 @@ sub, sup {
 .button {
   background-color: $color-primary;
   color: #fff !important;
-  padding: 12px 20px;
+  padding: 16px 32px;
   border: none;
+  text-transform: uppercase;
+  border-radius: 50px;
   &:hover {
     opacity: .9;
     text-decoration: none;
@@ -214,7 +216,7 @@ sub, sup {
     @include font-size(1.7);
     line-height: 1.1;
     margin-bottom: 0;
-    font-weight: $font-weight-normal;
+    font-weight: $font-weight-bold;
     color: $color-primary;
     a {
       color: $color-primary;
@@ -484,6 +486,7 @@ figcaption{
   grid-row-gap: 20px;
   padding: 25px;
   background-color: #16191d;
+  border-radius: 8px;
   &__item {
     display: flex;
     flex-flow: column;
