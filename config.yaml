@@ -3,7 +3,7 @@ languageCode: vi-vn
 copyright: This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
 title: Thien Nguyen
 theme: blog
-enableGitInfo: true
+enableGitInfo: false
 enableEmoji: true
 enableRobotsTXT: true
 googleAnalytics: UA-135910674-1
